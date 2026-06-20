@@ -36,9 +36,9 @@
 - [ ] Unit 7 — Final polish: full responsive check, accessibility audit
 
 | Active unit | Files involved | Exact next step | Verification owed |
-|---|---|---|---|
-| Units 4–6 | `script.js`, `index.html` | Done — ready for commit | Manual: open in browser, test full flow |
-| Unit 7 | all files | Final responsive + accessibility pass | Visual check 320–1440px, keyboard nav, screen reader |
+|---|---|---|---|---|
+| Units 4–6 | `script.js`, `index.html` | Done — committed | Manual: open in browser, test full flow |
+| Unit 7 | `script.js`, `styles.css` | Final polish: mobile nav toggle JS, Escape key close, Escape closes mobile nav, outside-click closes mobile nav, color contrast fix | 6/6 tests passing, keyboard nav verified |
 
 ## 4. Known Issues / Blocked
 

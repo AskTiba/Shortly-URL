@@ -485,8 +485,9 @@ main {
 }
 
 .shortener__link-shortened {
-  color: var(--clr-cyan-400);
+  color: hsl(180, 66%, 35%);
   flex-shrink: 0;
+  font-weight: var(--fw-500);
 }
 
 .shortener__link-actions {

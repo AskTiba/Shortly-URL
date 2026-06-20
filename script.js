@@ -123,6 +123,32 @@ function handleInputChange() {
   }
 }
 
+// Mobile nav toggle
+const menuToggle = document.querySelector('.header__menu-toggle');
+const nav = document.querySelector('.header__nav');
+
+menuToggle.addEventListener('click', () => {
+  const isOpen = nav.classList.toggle('header__nav--open');
+  menuToggle.setAttribute('aria-expanded', isOpen);
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && nav.classList.contains('header__nav--open')) {
+    nav.classList.remove('header__nav--open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuToggle.focus();
+  }
+});
+
+document.addEventListener('click', (e) => {
+  if (nav.classList.contains('header__nav--open') &&
+      !nav.contains(e.target) &&
+      !menuToggle.contains(e.target)) {
+    nav.classList.remove('header__nav--open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+  }
+});
+
 form.addEventListener('submit', handleSubmit);
 input.addEventListener('input', handleInputChange);
 
