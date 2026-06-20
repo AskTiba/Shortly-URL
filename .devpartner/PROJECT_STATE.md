@@ -28,18 +28,17 @@
 **Unit decomposition** (per SKILL.md 8.2 — checked off as each unit is committed):
 
 - [x] Unit 1 — Semantic HTML structure
-- [ ] Unit 2 — CSS: all sections (base styles through footer)
-- [ ] Unit 3 — JS: URL shortening API client (test-first)
-- [ ] Unit 4 — JS: form validation & error handling
-- [ ] Unit 5 — JS: shortened link list + localStorage persistence
-- [ ] Unit 6 — JS: clipboard copy
-- [ ] Unit 7 — Final polish: accessibility pass, responsive verification
+- [x] Unit 2 — CSS: all sections (base styles through footer)
+- [x] Unit 3 — JS: URL shortening API client (test-first)
+- [x] Unit 4 — JS: form validation & error handling
+- [x] Unit 5 — JS: shortened link list + localStorage persistence
+- [x] Unit 6 — JS: clipboard copy
+- [ ] Unit 7 — Final polish: full responsive check, accessibility audit
 
 | Active unit | Files involved | Exact next step | Verification owed |
-|---|---|---|---|---|
-| Unit 2 | `styles.css`, `index.html` | Done — committed | Visual check at mobile/tablet/desktop |
-| Unit 3 | `src/api.js`, `src/api.test.js`, `package.json`, `package-lock.json` | Done — ready for commit | 6/6 tests passing |
-| Unit 4 | `script.js` | Write form validation & UI integration | Manual test |
+|---|---|---|---|
+| Units 4–6 | `script.js`, `index.html` | Done — ready for commit | Manual: open in browser, test full flow |
+| Unit 7 | all files | Final responsive + accessibility pass | Visual check 320–1440px, keyboard nav, screen reader |
 
 ## 4. Known Issues / Blocked
 
