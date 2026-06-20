@@ -36,9 +36,10 @@
 - [ ] Unit 7 — Final polish: accessibility pass, responsive verification
 
 | Active unit | Files involved | Exact next step | Verification owed |
-|---|---|---|---|
-| Unit 2 | `styles.css`, `index.html` | Done — ready for commit | Visual check at mobile/tablet/desktop |
-| Unit 3 | `script.js`, tests | Write API client tests, then implement | Test pass |
+|---|---|---|---|---|
+| Unit 2 | `styles.css`, `index.html` | Done — committed | Visual check at mobile/tablet/desktop |
+| Unit 3 | `src/api.js`, `src/api.test.js`, `package.json`, `package-lock.json` | Done — ready for commit | 6/6 tests passing |
+| Unit 4 | `script.js` | Write form validation & UI integration | Manual test |
 
 ## 4. Known Issues / Blocked
 
