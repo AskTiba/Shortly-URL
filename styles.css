@@ -397,6 +397,7 @@ main {
 
 .shortener__form {
   display: flex;
+  align-items: flex-start;
   gap: var(--sp-600);
   padding: var(--sp-700);
   background-color: var(--clr-purple-950);
@@ -412,7 +413,6 @@ main {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: var(--sp-200);
 }
 
 .shortener__input {
@@ -439,22 +439,22 @@ main {
 }
 
 .shortener__error {
+  display: none;
   font-size: var(--fs-xs);
   font-style: italic;
   color: var(--clr-red-400);
-  min-height: 1.2em;
-  opacity: 0;
-  transition: opacity 0.2s;
+  margin-top: var(--sp-200);
 }
 
 .shortener__error--visible {
-  opacity: 1;
+  display: block;
 }
 
 .shortener__submit {
   padding: var(--sp-400) var(--sp-800);
   border-radius: var(--border-radius);
   font-size: var(--fs-body);
+  line-height: 1.6;
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -521,6 +521,7 @@ main {
 @media (max-width: 47.9375em) {
   .shortener__form {
     flex-direction: column;
+    align-items: stretch;
     gap: var(--sp-400);
     padding: var(--sp-600);
     background-image: url(./images/bg-shorten-mobile.svg);
