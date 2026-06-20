@@ -23,26 +23,22 @@
 
 ## 3. In Progress
 
-**Current feature/task:** Bootstrap — init repo, create `.devpartner/`, load context
+**Current feature/task:** CSS implementation
 
 **Unit decomposition** (per SKILL.md 8.2 — checked off as each unit is committed):
 
-- [ ] Unit 1 — Semantic HTML structure
-- [ ] Unit 2 — CSS: base styles, custom properties, typography
-- [ ] Unit 3 — CSS: header / nav / hero section (responsive)
-- [ ] Unit 4 — CSS: shortening form section (responsive)
-- [ ] Unit 5 — CSS: statistics section (responsive)
-- [ ] Unit 6 — CSS: CTA / footer sections (responsive)
-- [ ] Unit 7 — JS: URL shortening API client (test-first)
-- [ ] Unit 8 — JS: form validation & error handling
-- [ ] Unit 9 — JS: shortened link list + localStorage persistence
-- [ ] Unit 10 — JS: clipboard copy
-- [ ] Unit 11 — Final polish: accessibility pass, responsive verification
+- [x] Unit 1 — Semantic HTML structure
+- [ ] Unit 2 — CSS: all sections (base styles through footer)
+- [ ] Unit 3 — JS: URL shortening API client (test-first)
+- [ ] Unit 4 — JS: form validation & error handling
+- [ ] Unit 5 — JS: shortened link list + localStorage persistence
+- [ ] Unit 6 — JS: clipboard copy
+- [ ] Unit 7 — Final polish: accessibility pass, responsive verification
 
 | Active unit | Files involved | Exact next step | Verification owed |
-|---|---|---|---|---|
-| Unit 1 | `index.html` | Done — committed | Verified: balanced tags, semantic structure complete |
-| Unit 2 | `styles.css` | Write CSS base styles, custom properties, typography, reset | Visual check |
+|---|---|---|---|
+| Unit 2 | `styles.css`, `index.html` | Done — ready for commit | Visual check at mobile/tablet/desktop |
+| Unit 3 | `script.js`, tests | Write API client tests, then implement | Test pass |
 
 ## 4. Known Issues / Blocked
 
