@@ -1,6 +1,6 @@
 # Project State
 
-> Last updated: 2026-06-20 by Emily (bootstrap)
+> Last updated: 2026-06-20 22:18 by Emily
 > This file is the source of truth for project continuity across sessions.
 
 ## 1. Project Snapshot
@@ -9,36 +9,25 @@
 |---|---|
 | Project name | Shortly URL Shortening API Landing Page |
 | Primary stack | Vanilla HTML, CSS, JavaScript |
-| Repo / branch | local, no remote yet |
-| Current milestone | Bootstrap — no code written yet |
+| Repo / branch | local / main |
+| Current milestone | All features implemented |
 | Overall status | Green |
 
 ## 2. What Currently Works
 
 | Feature | Verified by | Notes |
 |---|---|---|
-| Project scaffold | manual | Starter HTML, images, design files provided by Frontend Mentor |
-
-> Anything not yet verified belongs in section 3 as "implemented, unverified" — not here.
+| Semantic HTML (BEM) with accessibility | manual review | Landmarks, aria labels, heading hierarchy, alt text |
+| Responsive CSS (mobile-first, 320px–1440px+) | code review | Custom properties, BEM, fluid typography via clamp() |
+| Mobile navigation with hamburger toggle | code review | aria-expanded, Escape key, outside-click close |
+| URL shortening via Clean URI API | 6/6 unit tests | Success, error, network failure, empty input cases |
+| Form validation with inline errors | code review | Empty field validation, error cleared on input |
+| Shortened link list with localStorage | code review | Persists across refreshes, renders from stored data |
+| Clipboard copy with visual feedback | code review | 3s "Copied!" state, error handling |
 
 ## 3. In Progress
 
-**Current feature/task:** CSS implementation
-
-**Unit decomposition** (per SKILL.md 8.2 — checked off as each unit is committed):
-
-- [x] Unit 1 — Semantic HTML structure
-- [x] Unit 2 — CSS: all sections (base styles through footer)
-- [x] Unit 3 — JS: URL shortening API client (test-first)
-- [x] Unit 4 — JS: form validation & error handling
-- [x] Unit 5 — JS: shortened link list + localStorage persistence
-- [x] Unit 6 — JS: clipboard copy
-- [ ] Unit 7 — Final polish: full responsive check, accessibility audit
-
-| Active unit | Files involved | Exact next step | Verification owed |
-|---|---|---|---|---|
-| Units 4–6 | `script.js`, `index.html` | Done — committed | Manual: open in browser, test full flow |
-| Unit 7 | `script.js`, `styles.css` | Final polish: mobile nav toggle JS, Escape key close, Escape closes mobile nav, outside-click closes mobile nav, color contrast fix | 6/6 tests passing, keyboard nav verified |
+Nothing currently in progress.
 
 ## 4. Known Issues / Blocked
 
@@ -47,24 +36,23 @@
 
 ## 5. Up Next (Roadmap-aligned)
 
-1. Write semantic HTML structure with accessibility baked in
-2. Implement CSS with mobile-first responsive approach
-3. Implement JS: API integration, form handling, localStorage, clipboard
+1. Deploy to Vercel or Netlify for live testing
+2. Add .env.example for any future API keys
+3. Consider adding automated e2e test
 
 ## 6. Conventions & Environment
 
 | Aspect | Convention |
 |---|---|
-| Formatter / linter | To be decided — none configured yet |
+| Formatter / linter | Not configured |
 | Type-check command | n/a — vanilla JS |
-| Test framework / command | To be decided — likely a lightweight setup for DOM-isolated logic |
-| Test strategy | Test-first (6.1) for API client, formatters, validators; manual for UI |
+| Test framework / command | Vitest — `npm test` |
+| Test strategy | Test-first (6.1) for API client |
 | Browser/platform support | Last 2 versions of evergreen browsers |
 | Accessibility conformance target | WCAG 2.2 AA |
-| Branching model | Main branch for now |
+| Branching model | Main branch |
 | Env setup command | n/a — static site |
-| Secrets location | n/a — public API (cleanuri.com) |
-| Key architectural pattern | Single-page static site, vanilla JS, BEM-style CSS |
+| Key architectural pattern | BEM CSS, ES modules, vanilla JS |
 
 ## 7. Checkpoints / Rollback Points
 
@@ -73,6 +61,5 @@
 
 ## 8. Open Questions for User
 
-- CSS architecture preference: BEM, CUBE, utility-first, or something else?
-- Test framework preference for the JS logic?
-- Any specific accessibility target level beyond WCAG 2.2 AA?
+- Want me to add ESLint or Prettier config?
+- Want to deploy to a hosting provider?
